@@ -29,4 +29,4 @@ For details see the Example app.
 
 ### Example
 
-<p style="text-align:center;"><img src="https://github.com/stateman92/VibrancyEffectView/blob/main/Resources/screenshor.png?raw=true" width="50%" alt="Example"></p>
+<p style="text-align:center;"><img src="https://github.com/stateman92/VibrancyEffectView/blob/main/Resources/screenshot.png?raw=true" width="50%" alt="Example"></p>
