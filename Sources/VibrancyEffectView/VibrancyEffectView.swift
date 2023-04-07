@@ -10,7 +10,6 @@ import UIKit
 public final class VibrancyEffectView: UIView {
     private let blurEffectView = UIVisualEffectView()
     private let vibrancyEffectView = UIVisualEffectView()
-    private var viewDidSetup = false
 
     public var style: UIBlurEffect.Style? {
         didSet {
@@ -31,7 +30,7 @@ public final class VibrancyEffectView: UIView {
 
 extension VibrancyEffectView {
     private func setupView() {
-        addSubview(blurEffectView)
+        super.addSubview(blurEffectView)
         blurEffectView.translatesAutoresizingMaskIntoConstraints = false
         blurEffectView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         blurEffectView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
@@ -46,8 +45,6 @@ extension VibrancyEffectView {
         vibrancyEffectView.leadingAnchor.constraint(equalTo: blurEffectView.contentView.leadingAnchor).isActive = true
 
         refresh()
-
-        viewDidSetup = true
     }
 }
 
@@ -58,7 +55,6 @@ extension VibrancyEffectView {
 
     public override func addSubview(_ view: UIView) {
         super.addSubview(view)
-        guard viewDidSetup else { return }
         debugPrint("Warning: view may be placed on the view that is given in the addVibrancySubview(block:) method.")
     }
 }
