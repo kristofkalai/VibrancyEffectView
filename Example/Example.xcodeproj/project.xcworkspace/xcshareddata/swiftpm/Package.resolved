@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stateman92/VibrancyEffectView",
       "state" : {
-        "revision" : "51ed1bdd13097e1a3b8079613a1ebf77eb01b82e",
-        "version" : "0.0.1"
+        "revision" : "f06128e06961b439dfcbc0afb4adc68536e268bb",
+        "version" : "0.0.3"
       }
     }
   ],

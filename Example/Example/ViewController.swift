@@ -64,7 +64,7 @@ extension ViewController {
         notVibrancyLabel.bottomAnchor.constraint(equalTo: vibrancyEffectyView.centerYAnchor).isActive = true
 
         let vibrancyLabel = label(text: "Vibrancy view")
-        vibrancyEffectyView.addVibrancySubview { view in
+        vibrancyEffectyView.addSubview { view in
             view.addSubview(vibrancyLabel)
             vibrancyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
             vibrancyLabel.topAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
@@ -83,7 +83,7 @@ extension ViewController {
         let vibrancyView = VibrantBackgroundView()
         vibrancyView.backgroundColor = .black
         vibrancyView.translatesAutoresizingMaskIntoConstraints = false
-        vibrancyEffectyView.addVibrancySubview { view in
+        vibrancyEffectyView.addSubview { view in
             view.addSubview(vibrancyView)
             vibrancyView.leadingAnchor.constraint(equalTo: vibrancyEffectyView.leadingAnchor).isActive = true
             vibrancyView.heightAnchor.constraint(equalToConstant: 100).isActive = true
