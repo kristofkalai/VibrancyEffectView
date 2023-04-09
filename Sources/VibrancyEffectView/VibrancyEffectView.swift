@@ -49,8 +49,8 @@ extension VibrancyEffectView {
 }
 
 extension VibrancyEffectView {
-    public func addVibrancySubview(block: (UIView) -> Void) {
-        block(vibrancyEffectView.contentView)
+    public func addSubview(withVibrancy: Bool = true, block: (UIView) -> Void) {
+        block(withVibrancy ? vibrancyEffectView.contentView : blurEffectView.contentView)
     }
 
     public override func addSubview(_ view: UIView) {
